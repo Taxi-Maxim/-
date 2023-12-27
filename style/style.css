@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+.bgk {
+  position: relative;
+  background-image: url(../img/main-screen__bgc.png);
+  height: 830px;
+  width: 100%;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  align-items: center;
+}
+.top nav {
+  display: flex;
+  gap: 56px;
+}
+.top nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.top button {
+  border-radius: 50px;
+  background: var(
+    --grad2,
+    linear-gradient(94deg, #c89afc 9.51%, #7c6afa 90.23%)
+  );
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.course {
+  color: #fff;
+  font-size: 64px;
+  width: 920px;
+}
+.course_info {
+  margin: 10% 15%;
+}
+.bot {
+  display: flex;
+  color: darkgrey;
+  background-color: #121212;
+  justify-content: space-around;
+  align-items: center;
+}
+.bot button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: var(
+    --grad1,
+    linear-gradient(95deg, #df5950 11.19%, #451046 93.72%)
+  );
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.students {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 35px 35px;
+}
+.students p {
+  margin: 0;
+}
+.count {
+  text-align: center;
+}
+.white {
+  width: 714px;
+  height: 6px;
+  background-color: #fff;
+}
+.grad {
+  width: 440px;
+  height: 6px;
+  background: var(
+    --grad1,
+    linear-gradient(95deg, #df5950 11.19%, #451046 93.72%)
+  );
+}
+.up {
+  display: flex;
+  gap: 30px;
+}
+.under {
+  display: flex;
+  justify-content: space-between;
+}
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/bgc.png), lightgray 0% 0% / 50px 50px repeat;
+  color: #fff;
+  padding-top: 150px;
+}
+main h1 {
+  margin: 0;
+}
+.main_first {
+  display: flex;
+  justify-content: center;
+  gap: 135px;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.bord {
+  width: 526px;
+  height: 450px;
+  border: 30px solid var(--grad2, #c89afc);
+}
+.bord img {
+  margin-top: 5%;
+}
+.right {
+  width: 30%;
+}
+.right h1 {
+  font-size: 48px;
+}
+.right p {
+  color: darkgrey;
+}
+.prof {
+  display: flex;
+  width: 70%;
+  gap: 40px;
+}
+.info {
+  width: 420px;
+  text-align: center;
+  margin-top: 100px;
+}
+.info p {
+  color: darkgrey;
+  width: 90%;
+  margin: auto;
+}
+.part {
+  display: flex;
+  align-items: center;
+  margin: 140px 0 20px 0;
+}
+.part p {
+  color: darkgray;
+  width: 80%;
+  text-align: center;
+}
+.partners img {
+  width: 220px;
+}
+.first_row,
+.second_row {
+  display: flex;
+  gap: 15px;
+}
+.first_row img:not(:last-child),
+.second_row img:not(:last-child) {
+  padding-right: 15px;
+  border-right: darkgray 1px solid;
+}
+.first_row {
+  border-bottom: darkgrey 1px solid;
+}
+.weeks {
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr;
+  grid-template-areas: "left middle right";
+}
+.week_left,
+.week_right {
+  width: 230px;
+}
+.weeks p {
+  color: darkgray;
+}
+.middle_wks {
+  position: relative;
+  width: 6px;
+  height: 800px;
+  background: var(
+    --grad2,
+    linear-gradient(94deg, #c89afc 9.51%, #7c6afa 90.23%)
+  );
+  grid-area: middle;
+  justify-self: center;
+}
+.left_wks,
+.right_wks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7 {
+  position: absolute;
+  background-color: darkgray;
+  width: 30px;
+  height: 6px;
+  top: 120px;
+  left: 6px;
+  border-radius: 0 5px 5px 0;
+}
+.line2 {
+  top: 390px;
+}
+.line3 {
+  top: 650px;
+}
+.line4,
+.line5,
+.line6,
+.line7 {
+  transform: rotate(-180deg);
+  left: -30px;
+  top: 90px;
+}
+.line5 {
+  top: 290px;
+}
+.line6 {
+  top: 490px;
+}
+.line7 {
+  top: 690px;
+}
+.prepods {
+  display: flex;
+  gap: 165px;
+}
+.prepodavatel {
+  text-align: center;
+}
+.prepodavatel p {
+  color: darkgray;
+}
+.prepodavatel img {
+  width: 250px;
+  border-radius: 100%;
+}
+.prepodavatel button {
+  color: #fff;
+  border-radius: 50px;
+  border: 1px solid var(--white, #fff);
+  padding: 10px 30px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.prepodavatel button:hover {
+  background-color: darkgray;
+  color: #121212;
+}
+form {
+  position: relative;
+  margin-right: 70px;
+}
+form input {
+  width: 350px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50px 0px 0px 50px;
+  opacity: 0.25;
+  background: var(--white, #fff);
+  border: none;
+}
+form button {
+  position: absolute;
+  padding: 12.5px 30px;
+  border-radius: 50px;
+  background: var(
+    --grad1,
+    linear-gradient(95deg, #df5950 11.19%, #451046 93.72%)
+  );
+  border: none;
+  color: #fff;
+  right: -100px;
+}
+footer {
+  padding: 60px;
+}
+.soc {
+  display: flex;
+  gap: 30px;
+}
+#burger,
+[for="burger"] {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .bord {
+    width: 350px;
+    height: 300px;
+  }
+  .bord img {
+    width: 80%;
+    margin: 12%;
+  }
+  .white {
+    width: 500px;
+  }
+  .grad {
+    width: 250px;
+  }
+  .prepods {
+    gap: 120px;
+  }
+  .prepods img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top nav {
+    gap: 20px;
+  }
+  .course {
+    font-size: 40px;
+    width: 85%;
+  }
+  .course_info {
+    margin: 10%;
+  }
+  .bgk {
+    height: 400px;
+  }
+  .white {
+    width: 300px;
+  }
+  .grad {
+    width: 190px;
+  }
+  .right h1 {
+    font-size: 36px;
+  }
+  .partners img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .top nav {
+    gap: 10px;
+    width: 100%;
+  }
+  .top nav a {
+    font-size: 12px;
+  }
+  header img {
+    display: none;
+  }
+  .bot {
+    display: none;
+  }
+  #enter {
+    display: none;
+  }
+  .course {
+    font-size: 38px;
+    width: 95%;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    width: 90%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .prof {
+    flex-direction: column;
+    align-items: center;
+  }
+  .partners img {
+    width: 90px;
+  }
+  .week_left,
+  .week_right {
+    width: 180px;
+  }
+  .prepods {
+    flex-direction: column;
+  }
+  form input {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .top nav {
+    display: grid;
+    text-align: right;
+    margin-right: 25px;
+  }
+  .info h2 {
+    width: 300px;
+    margin: 15px auto;
+  }
+  .part h1 {
+    font-size: 30px;
+  }
+  .partners img {
+    width: 80px;
+  }
+  .week_left {
+    width: 100px;
+    margin-left: 10px;
+  }
+  form input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .course {
+    font-size: 34px;
+  }
+  .info {
+    width: 90%;
+  }
+  .info h2 {
+    font-size: 20px;
+    width: 90%;
+  }
+  .info p {
+    width: 80%;
+  }
+  .partners img {
+    width: 60px;
+  }
+  .week_left {
+    width: 140px;
+    margin-left: 0;
+  }
+  .week_right {
+    width: 100px;
+  }
+  .weeks h3 {
+    font-size: 15px;
+  }
+  .part h1 {
+    font-size: 24px;
+  }
+  form input {
+    width: 160px;
+  }
+}
